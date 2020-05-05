@@ -1,0 +1,18 @@
+type User {
+    id: ID!
+    name: String!
+    email: String!
+}
+
+type Article {
+    id: ID!
+    title: String!
+    body: String!
+    author: User!
+}
+
+type Query {
+    user(id: ID! @eq): User @find
+    users: [User!]! @all
+    articles: [Article]! @all
+}
