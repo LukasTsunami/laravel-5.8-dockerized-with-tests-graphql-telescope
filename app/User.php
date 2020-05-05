@@ -3,6 +3,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\models\Article;
 
 class User extends Authenticatable
 {
